@@ -13,8 +13,15 @@ div {
 
 body {
   font-family: "Satoshi", sans-serif;
+  font-size: 62.5%;
   background-color: white;
   color: black;
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+  body {
+    font-size: 50%;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
