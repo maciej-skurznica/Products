@@ -1,6 +1,25 @@
-@import "_fonts";
+@import "reset";
+@import "fonts";
+@import "variables";
+
+// global styles
+* {
+  box-sizing: border-box;
+}
+
+div {
+  display: flex;
+}
 
 body {
-  background-color: aqua;
   font-family: "Satoshi", sans-serif;
+  background-color: white;
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
 }
