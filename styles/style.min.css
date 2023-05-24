@@ -1,1 +1,1 @@
-body{background-color:aqua}
+@font-face{font-family:"Satoshi";src:url("../assets/fonts/Satoshi-Regular.woff2");font-weight:400}@font-face{font-family:"Satoshi";src:url("../assets/fonts/Satoshi-Medium.woff2");font-weight:500}@font-face{font-family:"Satoshi";src:url("../assets/fonts/Satoshi-Bold.woff2");font-weight:700}body{background-color:aqua;font-family:"Satoshi",sans-serif}
