@@ -7,7 +7,8 @@ listOfItems.forEach(({ id, name, price }) => {
   productCard.classList.add("grid-item");
   productCard.innerHTML = `
     <div class="item">
-      <img src="./assets/images/Rectangle ${id}.png" alt="item ${name} image" />
+      <img class="item-image" src="./assets/images/Rectangle ${id}.png" alt="item ${name} image" />
+      <img class="item-arrow" src="./assets/images/arrow.png" alt="small arrow" />
     </div>
     <h3 class="grid-item-title">${name}</h3>
     <p class="grid-item-price">£${price}</p>
