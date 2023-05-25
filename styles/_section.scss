@@ -2,6 +2,8 @@ section {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr minmax(0, 1216px);
+  grid-template-rows: max-content;
+  row-gap: 1.65rem;
 
   h4 {
     grid-column: 2 / 3;
@@ -13,7 +15,6 @@ section {
 
   .section-grid {
     grid-column: 2 / 3;
-    margin-top: 1.65rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2.2rem;

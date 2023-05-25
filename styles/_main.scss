@@ -4,6 +4,7 @@ main {
   gap: 4%;
   padding-top: 9rem;
   padding-bottom: 12.445rem;
+  min-height: calc(100vh - 3.8rem - 14.25rem);
 }
 
 @media only screen and (max-width: $breakpoint-1) {
@@ -11,5 +12,11 @@ main {
     display: flex;
     flex-direction: column;
     padding: 6rem 0;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-3) {
+  main {
+    min-height: calc(100vh - 3.8rem - 11.85rem);
   }
 }
