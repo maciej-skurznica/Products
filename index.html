@@ -28,8 +28,55 @@
       <h1>Products</h1>
     </header>
 
+    <!-- _main.scss -->
     <main>
-      <aside></aside>
+      <!-- _aside.scss -->
+      <aside>
+        <form class="aside-filter-form">
+          <label for="search-bar">Filter by name</label>
+          <input type="text" id="search-bar" placeholder="Start typing to filter" />
+        </form>
+
+        <div class="aside-sorting-buttons">
+          <h4>Sort</h4>
+          <div class="button-group">
+            <button class="sort-by-name active">
+              Name
+              <svg
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.769287 5.90814L5.79664 0.880829L10.824 5.90814"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linejoin="bevel"
+                />
+              </svg>
+            </button>
+            <button class="sort-by-price">
+              Price
+              <svg
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.769287 5.90814L5.79664 0.880829L10.824 5.90814"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linejoin="bevel"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </aside>
 
       <section></section>
     </main>

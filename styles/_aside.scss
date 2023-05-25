@@ -1,0 +1,83 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7.5rem;
+
+  .aside-filter-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.65rem;
+
+    label {
+      @extend h4;
+    }
+
+    input {
+      width: 100%;
+      height: 43.35px;
+      border: 1px solid $grey-border;
+      border-radius: 4px;
+      background: $grey-input;
+      padding: 0 1.727rem;
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+      font-weight: 500;
+
+      &::placeholder {
+        color: $grey-placeholder;
+      }
+    }
+  }
+
+  .aside-sorting-buttons {
+    @extend .aside-filter-form;
+
+    .button-group {
+      width: 100%;
+      border: 1px solid $grey-border;
+      border-radius: 4px;
+      background: $grey-input;
+      padding: 4.51px 4.16px;
+
+      button {
+        width: 110.84px;
+        height: 34.33px;
+        margin-right: 10px;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        font-weight: 700;
+        color: $grey-placeholder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.34rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        svg path {
+          stroke: $grey-icon;
+          transition: all 0.2s;
+        }
+
+        &:hover {
+          background: white;
+
+          svg path {
+            stroke: $grey-placeholder;
+          }
+        }
+
+        &.active {
+          background: white;
+          box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.14);
+          color: black;
+
+          svg path {
+            stroke: black;
+          }
+        }
+      }
+    }
+  }
+}
