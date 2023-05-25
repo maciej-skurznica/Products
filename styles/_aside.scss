@@ -61,13 +61,13 @@ aside {
           transition: all 0.2s;
         }
 
-        &:hover {
-          background: white;
+        // &:hover {
+        //   background: white;
 
-          svg path {
-            stroke: $grey-placeholder;
-          }
-        }
+        //   svg path {
+        //     stroke: $grey-placeholder;
+        //   }
+        // }
 
         &.active {
           background: white;
@@ -78,11 +78,25 @@ aside {
             stroke: black;
           }
 
-          &:hover {
-            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
-          }
+          // &:hover {
+          //   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+          // }
         }
       }
+    }
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  aside .aside-sorting-buttons .button-group button:hover {
+    background: white;
+
+    svg path {
+      stroke: $grey-placeholder;
+    }
+
+    &.active:hover {
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
     }
   }
 }
