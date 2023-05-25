@@ -1,7 +1,10 @@
 section {
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1216px);
 
   h4 {
+    grid-column: 2 / 3;
     color: $grey-section-h4;
 
     span {
@@ -10,6 +13,7 @@ section {
   }
 
   .section-grid {
+    grid-column: 2 / 3;
     margin-top: 1.65rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
