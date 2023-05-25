@@ -47,9 +47,9 @@ html {
   background-color: white;
   color: black;
 
-  // @media only screen and (max-width: $breakpoint-mobile) {
-  //   font-size: 50%;
-  // }
+  @media only screen and (max-width: $breakpoint-2) {
+    font-size: 50%;
+  }
 
   @media (prefers-color-scheme: dark) {
     background-color: black;
@@ -58,8 +58,9 @@ html {
 }
 
 body {
-  max-width: 1728px;
+  min-width: 375px;
   width: 100%;
+  max-width: 1728px;
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 6.4rem;

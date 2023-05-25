@@ -81,3 +81,15 @@ section {
     }
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  section .section-grid {
+    grid-template-columns: repeat(auto-fit, minmax(212px, 1fr));
+  }
+}
+
+@media only screen and (max-width: $breakpoint-3) {
+  section .section-grid {
+    row-gap: 3rem;
+  }
+}

@@ -5,3 +5,11 @@ main {
   padding-top: 9rem;
   padding-bottom: 12.445rem;
 }
+
+@media only screen and (max-width: $breakpoint-1) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 0;
+  }
+}
