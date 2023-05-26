@@ -7,9 +7,10 @@ section {
 
   h4 {
     grid-column: 2 / 3;
+    color: $grey-section-h4;
 
     span {
-      color: $grey-section-h4;
+      color: initial;
     }
   }
 

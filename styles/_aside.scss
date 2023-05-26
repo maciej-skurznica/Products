@@ -56,9 +56,13 @@ aside {
         cursor: pointer;
         transition: all 0.2s;
 
-        svg path {
-          stroke: $grey-icon;
+        svg {
           transition: all 0.2s;
+
+          path {
+            stroke: $grey-icon;
+            transition: all 0.2s;
+          }
         }
 
         &.active {
@@ -69,6 +73,16 @@ aside {
           svg path {
             stroke: black;
           }
+        }
+
+        &.ascending {
+          svg {
+            transform: rotate(-180deg);
+          }
+        }
+
+        &:active {
+          transform: translateY(1px);
         }
       }
     }
@@ -84,7 +98,7 @@ aside {
     }
 
     &.active:hover {
-      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+      box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.14);
     }
   }
 }
@@ -98,7 +112,7 @@ aside {
     }
 
     &.active:active {
-      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+      box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.14);
     }
   }
 }

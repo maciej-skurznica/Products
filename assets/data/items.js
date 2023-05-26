@@ -1,62 +1,62 @@
 const listOfItems = [
   {
     id: 1,
-    name: "One",
+    name: "Falcon X",
     price: 1799,
   },
   {
     id: 2,
-    name: "Two",
+    name: "Koala",
     price: 2499,
   },
   {
     id: 3,
-    name: "Three",
+    name: "Falcon",
     price: 1180,
   },
   {
     id: 4,
-    name: "Four",
+    name: "Zebra",
     price: 1025,
   },
   {
     id: 5,
-    name: "Five",
+    name: "Penguin",
     price: 69,
   },
   {
     id: 6,
-    name: "Six",
+    name: "White Penguin",
     price: 52,
   },
   {
     id: 7,
-    name: "Seven",
+    name: "Whale",
     price: 1160,
   },
   {
     id: 8,
-    name: "Eight",
+    name: "Zebra Pro",
     price: 2045,
   },
   {
     id: 9,
-    name: "Nine",
+    name: "Fox",
     price: 245,
   },
   {
     id: 10,
-    name: "Ten",
+    name: "Panda",
     price: 420,
   },
   {
     id: 11,
-    name: "Eleven",
+    name: "Tiger",
     price: 680,
   },
   {
     id: 12,
-    name: "Twelve",
+    name: "Flamingo",
     price: 1700,
   },
 ];
