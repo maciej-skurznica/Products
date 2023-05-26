@@ -34,13 +34,18 @@
       <aside>
         <form class="aside-filter-form">
           <label for="search-bar">Filter by name</label>
-          <input type="text" id="search-bar" placeholder="Start typing to filter" />
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Start typing to filter"
+            aria-label="search product by name"
+          />
         </form>
 
-        <div class="aside-sorting-buttons">
+        <div class="aside-sorting-buttons" role="group" aria-label="sort buttons">
           <h4>Sort</h4>
           <div class="button-group">
-            <button class="sort-by-name active ascending">
+            <button class="sort-by-name active ascending" aria-label="sort by name">
               Name
               <svg
                 width="12"
@@ -48,6 +53,8 @@
                 viewBox="0 0 12 8"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   d="M10.9111 1.50616L5.88378 6.53348L0.856464 1.50617"
@@ -57,7 +64,7 @@
                 />
               </svg>
             </button>
-            <button class="sort-by-price">
+            <button class="sort-by-price" aria-label="sort by price">
               Price
               <svg
                 width="12"
@@ -65,6 +72,8 @@
                 viewBox="0 0 12 8"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   d="M10.9111 1.50616L5.88378 6.53348L0.856464 1.50617"
@@ -79,7 +88,7 @@
       </aside>
 
       <!-- _section.scss -->
-      <section>
+      <section aria-live="polite">
         <h4>Sorted by <span>name (ascending)</span></h4>
         <div class="section-grid">
           <!-- main.js -->
